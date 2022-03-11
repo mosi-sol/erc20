@@ -6,10 +6,12 @@
 # ERC 20
 erc20 : how to, create, upgrade, swap, wraped, etc...
 
+this repo created for study group (live videos & my youtube channel)
+
 ##
 
 ### Disclaimer:
-- this repo for teaching on youtube - > pafecafe.
+- this repo for teaching on youtube -> pafecafe.
 - expermential codes.
 - using in production in your own risk.
 
