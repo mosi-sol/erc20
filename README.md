@@ -3,7 +3,7 @@
 </p>
 
 # ERC 20
-erc20 : how to, create, upgrade, swap, wraped, etc...
+erc20 : how to, create, upgrade, swap, wrapped, etc...
 
 this repo created for study group (live videos & my youtube channel), so maybe some codes not completed yet just for teaching/learning perpuses.
 
@@ -12,12 +12,21 @@ this repo created for study group (live videos & my youtube channel), so maybe s
 
 ##
 
+## content sheet
+### ERC20
+- [standard & simple](https://github.com/mosi-sol/erc20/blob/main/erc20%20standard%20token/1-erc20-normal.sol) using openzeppelin
+- [normal](https://github.com/mosi-sol/erc20/blob/main/erc20%20standard%20token/2-erc20-normal.sol) using openzeppelin
+- [mintable](https://github.com/mosi-sol/erc20/blob/main/mintable%20token/erc20.sol) using openzeppelin
+- [swap 2 pairs](https://github.com/mosi-sol/erc20/blob/main/tokenSwap/Swap2Pairs.sol) using IERC20
+
+---
+
 ### Disclaimer:
 - this repo for teaching on youtube -> pafecafe.
 - expermential codes.
 - using in production in your own risk.
 
-##
+---
 <div>
 <span align="left"> 
 <a href="https://img.shields.io/github/license/mosi-sol/erc20" target="blank">
