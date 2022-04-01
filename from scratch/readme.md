@@ -59,6 +59,12 @@ function _functionName(arguments) internal virtual returns (bool){
 ```
 ***more info about hook:*** ` https://docs.openzeppelin.com/contracts/4.x/extending-contracts#using-hooks `
 
+#
+
+### example:
+[example](https://github.com/mosi-sol/erc20/blob/main/from%20scratch/flatERC20Example.sol)
+deploy : ` TokenERC20.sol `
+
 ---
 <p align="right"> 
   <a href="https://github.com/mosi-sol/erc20/blob/main/from%20scratch/ERC20.sol" target="blank">
