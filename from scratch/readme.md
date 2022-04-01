@@ -10,7 +10,7 @@ import this contract like following codes:
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.10;
 
-import "https://github.com/mosi-sol/erc20/tree/main/from%20scratch/ERC20.sol";
+import "https://github.com/mosi-sol/erc20/blob/main/from%20scratch/ERC20.sol";
 
 contract TheErc20 is ERC20 {
   constructor(
