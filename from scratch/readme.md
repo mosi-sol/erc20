@@ -60,7 +60,7 @@ function _functionName(arguments) internal virtual returns (bool){
 ***more info about hook:*** ` https://docs.openzeppelin.com/contracts/4.x/extending-contracts#using-hooks `
 
 ---
-<span align="right"> 
+<p align="right"> 
 <a href="https://github.com/mosi-sol/erc20" target="blank">
   <img src="https://img.shields.io/github/license/mosi-sol/erc20" alt="pafecafe" /></a> 
-</span>
+</p>
