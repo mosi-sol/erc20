@@ -4,7 +4,7 @@ pragma solidity ^0.8.10;
 // EIP20 => https://eips.ethereum.org/EIPS/eip-20
 import "https://github.com/mosi-sol/erc20/blob/main/IERC20.sol";
 
-contract TheErc20 is IERC20 {
+contract ERC20 is IERC20 {
     // variables
     string name;
     string symbol;
