@@ -5,7 +5,7 @@
 talk between erc20`s by using [EIP20](https://eips.ethereum.org/EIPS/eip-20) -> [IERC20](https://github.com/mosi-sol/erc20/blob/main/IERC20.sol)
 
 ## how to use:
-import this contract like following codes:
+import this contract like following codes, & use costructor:
 ```
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.10;
@@ -17,7 +17,7 @@ contract TheErc20 is ERC20 {
         string memory _name,
         string memory _symbol,
         uint8 _decimals
-    ) ERC20(_name, _symbol, _decimals) {
+    ) ERC20 (_name, _symbol, _decimals) {
         name = _name;
         symbol = _symbol;
         decimals = _decimals;
@@ -47,3 +47,13 @@ contract TheErc20 is ERC20 {
 - event mint
 - event burn
 
+#
+
+## use internal logic functions
+
+### hook avalible
+```
+function _functionName(arguments) internal virtual returns (bool){
+  super._functionName(x);
+}
+```
