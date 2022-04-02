@@ -47,6 +47,8 @@ contract ERC20 is IERC20 {
     }
 
     function transferFrom(address sender, address recipient, uint amount) external returns (bool success) {
+        bool cach = _approve(sender, amount);
+        require(cach, "approve by sender");
         success = _transferFrom(sender, recipient, amount);
         require(success, "Transaction failed");
     }
