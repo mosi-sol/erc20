@@ -38,22 +38,27 @@ contract ERC20 is IERC20 {
     // public functions
     function approve(address spender, uint amount) external returns (bool success) {
         success = _approve(spender, amount);
+        require(success, "Transaction failed");
     }
 
     function transfer(address recipient, uint amount) external returns (bool success) {
         success = _transfer(recipient, amount);
+        require(success, "Transaction failed");
     }
 
     function transferFrom(address sender, address recipient, uint amount) external returns (bool success) {
         success = _transferFrom(sender, recipient, amount);
+        require(success, "Transaction failed");
     }
 
     function mint(uint amount) external returns (bool success) {
         success = _mint(amount);
+        require(success, "Transaction failed");
     }
 
     function burn(uint amount) external returns (bool success) {
         success = _burn(amount);
+        require(success, "Transaction failed");
     }
 
     // terminal logic [only owner]
