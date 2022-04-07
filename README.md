@@ -14,11 +14,12 @@ this repo created for study group (live videos & my youtube channel), so maybe s
 
 ## content sheet
 ### ERC20
-- [standard & simple](https://github.com/mosi-sol/erc20/blob/main/erc20%20standard%20token/1-erc20-normal.sol) using openzeppelin
-- [normal](https://github.com/mosi-sol/erc20/blob/main/erc20%20standard%20token/2-erc20-normal.sol) using openzeppelin
-- [mintable](https://github.com/mosi-sol/erc20/blob/main/mintable%20token/erc20.sol) using openzeppelin
-- [swap 2 pairs](https://github.com/mosi-sol/erc20/blob/main/tokenSwap/Swap2Pairs.sol) using IERC20
-- [from scratch](https://github.com/mosi-sol/erc20/tree/main/from%20scratch) using IERC20
+- [standard & simple](https://github.com/mosi-sol/erc20/blob/main/erc20%20standard%20token/1-erc20-normal.sol) using openzeppelin 
+- [normal](https://github.com/mosi-sol/erc20/blob/main/erc20%20standard%20token/2-erc20-normal.sol) using openzeppelin 
+- [mintable](https://github.com/mosi-sol/erc20/blob/main/mintable%20token/erc20.sol) using openzeppelin 
+- [swap 2 pairs](https://github.com/mosi-sol/erc20/blob/main/tokenSwap/Swap2Pairs.sol) using IERC20 
+- [from scratch](https://github.com/mosi-sol/erc20/tree/main/from%20scratch) using IERC20 
+- [simple from scratch](https://github.com/mosi-sol/erc20/tree/main/easy%20erc20) using IERC20 
 
 ---
 
