@@ -1,4 +1,8 @@
+# ERC20
 
+another `erc20` from scratch series.
+
+*simple & easy to use.*
 
 
 ### sample to use
