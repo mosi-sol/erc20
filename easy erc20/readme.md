@@ -4,7 +4,8 @@
 ### sample to use
 - just copy & paste this code in below to your project or [remix](https://remix.ethereum.org/) 
 - change `ThrErc20` to your custom name
-```
+
+```solidity
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.10;
 
