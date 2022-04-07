@@ -2,7 +2,7 @@
 
 
 ### sample to use
-- just copy & paste this to your project or [remix](https://remix.ethereum.org/) 
+- just copy & paste this code in below to your project or [remix](https://remix.ethereum.org/) 
 - change `ThrErc20` to your custom name
 ```
 // SPDX-License-Identifier: MIT
