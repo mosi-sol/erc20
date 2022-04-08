@@ -2,11 +2,12 @@
 ## from scratch
 
 ### IERC20:
-talk between erc20`s by using [EIP20](https://eips.ethereum.org/EIPS/eip-20) -> [IERC20](https://github.com/mosi-sol/erc20/blob/main/IERC20.sol)
+talk between erc20's by using [EIP20](https://eips.ethereum.org/EIPS/eip-20) -> [IERC20](https://github.com/mosi-sol/erc20/blob/main/IERC20.sol)
 
 ## how to use:
 import this contract like following codes, & use costructor:
-```
+
+```solidity
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.10;
 
@@ -52,7 +53,8 @@ contract TheErc20 is ERC20 {
 ## use internal logic functions
 
 ### hook avalible
-```
+
+```solidity
 function _functionName(arguments) internal virtual returns (bool){
   super._functionName(x);
 }
