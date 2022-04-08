@@ -1,0 +1,6 @@
+### mintable token
+
+ sometimes founders make *ico* like this, this is not correct for *ico*,*ido*...
+
+
+**todo**: `reentrancy`, `withdraw`, `balance`...
