@@ -20,6 +20,8 @@ this repo created for study group (live videos & my youtube channel), so maybe s
 - [swap 2 pairs](https://github.com/mosi-sol/erc20/blob/main/tokenSwap/Swap2Pairs.sol) using IERC20 
 - [from scratch](https://github.com/mosi-sol/erc20/tree/main/from%20scratch) using IERC20 
 - [simple from scratch](https://github.com/mosi-sol/erc20/tree/main/easy%20erc20) using IERC20 
+- ##
+- [Ver 0.1.0 _ from scratch](https://github.com/mosi-sol/erc20/tree/main/ERC20-finalize) using IERC20  
 
 ---
 
