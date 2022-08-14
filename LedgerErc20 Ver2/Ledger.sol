@@ -61,8 +61,7 @@ abstract contract ERC20 is IERC20, IERC20Metadata, ILedger {
     }
 
     function transferFrom(address sender, address recipient, uint amount) external virtual override returns (bool){
-        _allowed[sender][msg.sender] += amount;
-        return _transferFrom(sender, recipient, amount);
+        return _transfer(sender, recipient, amount);
     }
 
     function _approve(address spender, uint amount) internal returns (bool){
@@ -80,18 +79,15 @@ abstract contract ERC20 is IERC20, IERC20Metadata, ILedger {
         return true;
     }
 
-    function _transferFrom(address sender, address recipient, uint amount) internal returns (bool){
-        require(sender != address(0), "Error: sender can not be address 0!");
+    function _transfer(address from, address recipient, uint amount) internal returns (bool){ // _transferFrom
+        require(from != address(0), "Error: sender can not be address 0!");
         require(recipient != address(0), "Error: recipient can not be address 0!");
-        require(amount <= _balanceOf[sender]);
-        require(amount <= _allowed[sender][msg.sender]);
-        unchecked {
-            _balanceOf[sender] = _balanceOf[sender] - amount;
-            _allowed[sender][msg.sender] = _allowed[sender][msg.sender] - amount;
-        }        
+        require(amount <= _balanceOf[from]);
+        _allowed[from][msg.sender] = amount;
+        _balanceOf[from] = _balanceOf[from] - amount;
         _balanceOf[recipient] = _balanceOf[recipient] + amount;
-        emit Transfer(sender, recipient, amount);
-        _compressData(amount, sender, recipient);
+        emit Transfer(from, recipient, amount);
+        _compressData(amount, recipient);
         return true;
     }
 
@@ -157,6 +153,7 @@ abstract contract ERC20 is IERC20, IERC20Metadata, ILedger {
     }
 
     function getResult(uint256 data) external view virtual override returns (uint256 id, address from, address to, uint256 amount, uint256 time) {
+        require(data < _ledgerId, "Warning: not exist id");
         bytes memory info = _hashed[data];
         (id, from, to, amount, time) = abi.decode(info, (uint256, address, address, uint256, uint256));
     }
