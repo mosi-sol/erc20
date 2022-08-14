@@ -19,4 +19,11 @@ following the holders of erc20 asset. this type of erc20 assets good for compani
 - transfer
 - transferFrom
 
+### how to impeliment
+```solidity
+contract Mock is ERC20Ledger {
+    constructor(string memory _name, string memory _symbol) ERC20Ledger(_name, _symbol){}
+}
+```
+
 enjoy it!
