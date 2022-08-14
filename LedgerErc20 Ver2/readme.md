@@ -4,6 +4,9 @@ Do you want *#Ethereum* to act like *#Bitcoin* ?
 
 following the *holders* of erc20 asset. this type of erc20 assets good for *companies, projects and governments*.
 
+### Live demo
+- [Ledger Erc20 Mock](https://testnet.bscscan.com/address/0x9ddee794ae455eb10043c2af1bc24ee5ccc0dffc) 
+- ledger id's from 0 to 3 for test, use function `getResult` for view data
 
 ### update's asap
 - maximum transaction count: **115792089237316195423570985008687907853269984665640564039457584007913129639935**
