@@ -59,3 +59,10 @@ contract Mock is ERC20 { // ERC20 = ledger.sol
         (id, from, to, amount, time) = abi.decode(info, (uint256, address, address, uint256, uint256));
     }
 ```
+
+### for find ltest ledger id, use this code:
+```solidity
+function currentLedgerId() external view returns (uint256) {
+    return _ledgerId;
+}
+```
