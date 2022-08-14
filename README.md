@@ -21,7 +21,8 @@ this repo created for study group (live videos & my youtube channel), so maybe s
 - [from scratch](https://github.com/mosi-sol/erc20/tree/main/from%20scratch) using IERC20 
 - [simple from scratch](https://github.com/mosi-sol/erc20/tree/main/easy%20erc20) using IERC20 
 - 
-- [ERC20 Ledger](https://github.com/mosi-sol/erc20/tree/main/Ledger%20ERC20%20Ver1) from scratch
+- [ERC20 Ledger ver1](https://github.com/mosi-sol/erc20/tree/main/Ledger%20ERC20%20Ver1) from scratch 
+- [ERC20 Ledger ver2](https://github.com/mosi-sol/erc20/tree/main/LedgerErc20%20Ver2) full functional
 - 
 - [Ver 0.1.0 _ from scratch](https://github.com/mosi-sol/erc20/tree/main/ERC20-finalize) using IERC20  
 
