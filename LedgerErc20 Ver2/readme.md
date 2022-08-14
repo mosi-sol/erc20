@@ -53,14 +53,15 @@ contract Mock is ERC20 { // ERC20 = ledger.sol
         return _hashed[data];
     }
 
-    function getResult(uint256 data) external view virtual override returns (uint256 id, address from, address to, uint256 amount, uint256 time) {
+    function getResult(uint256 data) external view virtual override 
+    returns (uint256 id, address from, address to, uint256 amount, uint256 time) {
         require(data < _ledgerId, "Warning: not exist id");
         bytes memory info = _hashed[data];
         (id, from, to, amount, time) = abi.decode(info, (uint256, address, address, uint256, uint256));
     }
 ```
 
-### for find ltest ledger id, use this code:
+### for find latest ledger id, use this code:
 ```solidity
 function currentLedgerId() external view returns (uint256) {
     return _ledgerId;
