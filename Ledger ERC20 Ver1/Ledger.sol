@@ -24,7 +24,7 @@ interface ILedger {
 
 }
 
-abstract contract ERC20LedgerV21 is ILedger, ERC20{
+abstract contract ERC20Ledger is ILedger, ERC20{
     using Counters for Counters.Counter;
 
     Counters.Counter private _hashIdCounter;
@@ -89,9 +89,9 @@ abstract contract ERC20LedgerV21 is ILedger, ERC20{
 
 }
 
-contract Mock is ERC20LedgerV21 {
+contract Mock is ERC20Ledger {
     address ad1 = 0xAb8483F64d9C6d1EcF9b849Ae677dD3315835cb2;
-    constructor(string memory _name, string memory _symbol) ERC20LedgerV21(_name, _symbol){
+    constructor(string memory _name, string memory _symbol) ERC20Ledger(_name, _symbol){
         mint(msg.sender, 1000 * 10 ** 18);
     }
 
