@@ -16,7 +16,7 @@ contract Mock is ERC20 {
     }
 
     function testBurn() public {
-        _mint(msg.sender, 5);
+        _burn(msg.sender, 5);
     }
 
     function testTransfer(address recipient) public {
@@ -24,6 +24,7 @@ contract Mock is ERC20 {
     }
 
     function testTransferFrom(address recipient) public {
-        _transferFrom(msg.sender, recipient, 15);
+        _incressAllowance(recipient, 1);
+        _transfer(msg.sender, recipient, 1);
     }
 }
