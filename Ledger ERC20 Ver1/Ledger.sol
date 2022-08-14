@@ -1,17 +1,16 @@
 // SPDX-License-Identifier: MIT
 pragma solidity 0.8;
 
-// import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
 import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
 import "@openzeppelin/contracts/token/ERC20/extensions/IERC20Metadata.sol";
 import "@openzeppelin/contracts/utils/Counters.sol";
 
 /*
-maximum transaction before overflow OR maximum transaction id using for ledger
-uint256 MAX_INT = 115792089237316195423570985008687907853269984665640564039457584007913129639935
-uint256 MAX_INT = 0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
-uint256 MAX_INT = uint256(-1)
-uint256 MAX_INT = 2**256 - 1
+    maximum transaction before overflow OR maximum transaction id using for ledger
+    uint256 MAX_INT = 115792089237316195423570985008687907853269984665640564039457584007913129639935
+    uint256 MAX_INT = 0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+    uint256 MAX_INT = uint256(-1)
+    uint256 MAX_INT = 2**256 - 1
 */
 
 // ledger: basic version. not track asset`s by approved
