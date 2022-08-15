@@ -5,7 +5,8 @@ Do you want *#Ethereum* to act like *#Bitcoin* ?
 following the *holders* of erc20 asset. this type of erc20 assets good for *companies, projects and governments*.
 
 ### Live demo
-- [Ledger Erc20 Mock](https://testnet.bscscan.com/address/0x9ddee794ae455eb10043c2af1bc24ee5ccc0dffc) 
+- Ledger Erc20 Mock [Live on BSC testnet](https://testnet.bscscan.com/address/0x9ddee794ae455eb10043c2af1bc24ee5ccc0dffc) 
+- Ledger Coin [Live on LUKSO 16](https://explorer.execution.l16.lukso.network/address/0x0F1FB152945d5e9bb7B0841D3a6981f22428C7c3/contracts) 
 - ledger id's from 0 to 3 for test, use function `getResult` for view data
 
 ### update's asap
