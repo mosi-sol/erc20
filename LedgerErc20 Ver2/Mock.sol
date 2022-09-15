@@ -9,22 +9,27 @@ test by: mock example
 
 contract Mock is ERC20 {
     constructor(string memory name_, string memory symbol_/*, uint8 decimals_*/) 
-    ERC20(name_, symbol_/*, decimals_*/) {}
+    ERC20(name_, symbol_/*, decimals_*/) {
+        testMint();
+    }
 
     function testMint() public {
-        _mint(msg.sender, 100);
+        _mint(msg.sender, 1000000 * 10 ** 18);
     }
 
     function testBurn() public {
-        _burn(msg.sender, 5);
+        _burn(msg.sender, 500 * 10 ** 18);
     }
 
     function testTransfer(address recipient) public {
-        _transfer(recipient, 10);
+        _transfer(recipient, 150 * 10 ** 18);
     }
 
     function testTransferFrom(address recipient) public {
-        _incressAllowance(recipient, 1);
-        _transfer(msg.sender, recipient, 1);
+        _transfer(msg.sender, recipient, 1000 * 10 ** 18);
+    }
+
+    function testApprove(address recipient) public {
+        _approve(recipient, 50 * 10 ** 18);
     }
 }
